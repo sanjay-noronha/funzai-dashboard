@@ -1,0 +1,963 @@
+{
+  "meta": {
+    "generated_date": "2026-08-02",
+    "data_range": "11 Apr 2026 – 31 Jul 2026",
+    "total_videos_analyzed": 63,
+    "recent_window": "last 12 (published 16 Jul – 31 Jul 2026)",
+    "source_file": "YouTube_Shorts_Analytics_2_Aug_2026.xlsx",
+    "scoring_note": "Composite OKR score = 0.40×(stayed/70) + 0.25×(pct_viewed/80) + 0.25×(engaged/600) + 0.10×(ctr/4.0). Each ratio capped at 1.5. Score 1.0 = hitting all OKR targets."
+  },
+  "okr_snapshot": {
+    "stayed_to_watch": {
+      "recent": 53.84,
+      "alltime": 44.7,
+      "target": 70.0,
+      "status": "amber"
+    },
+    "avg_pct_viewed": {
+      "recent": 55.53,
+      "alltime": 55.03,
+      "target": 80.0,
+      "status": "amber"
+    },
+    "engaged_views": {
+      "recent": 393.0,
+      "alltime": 325.2,
+      "target": 600,
+      "status": "amber"
+    },
+    "ctr": {
+      "recent": 2.53,
+      "alltime": 1.81,
+      "target": 4.0,
+      "status": "amber"
+    }
+  },
+  "sub_category_performance": {
+    "A1": {
+      "label": "A1 Governance & Safety",
+      "count": 23,
+      "avg_stayed": 49.55,
+      "avg_pct_viewed": 57.7,
+      "avg_engaged_views": 419.1,
+      "avg_ctr": 1.84
+    },
+    "A2": {
+      "label": "A2 Jobs & Economy",
+      "count": 15,
+      "avg_stayed": 40.43,
+      "avg_pct_viewed": 55.29,
+      "avg_engaged_views": 274.8,
+      "avg_ctr": 2.02
+    },
+    "A3": {
+      "label": "A3 Indirect Trend",
+      "count": 5,
+      "avg_stayed": 47.72,
+      "avg_pct_viewed": 59.64,
+      "avg_engaged_views": 468.0,
+      "avg_ctr": 1.8
+    },
+    "B1": {
+      "label": "B1 Meeting Terms",
+      "count": 12,
+      "avg_stayed": 41.38,
+      "avg_pct_viewed": 46.15,
+      "avg_engaged_views": 226.6,
+      "avg_ctr": 1.88
+    },
+    "B2": {
+      "label": "B2 Manager Decisions",
+      "count": 3,
+      "avg_stayed": 50.28,
+      "avg_pct_viewed": 51.27,
+      "avg_engaged_views": 258.3,
+      "avg_ctr": 1.76
+    },
+    "C1": {
+      "label": "C1 Peer Stories",
+      "count": 2,
+      "avg_stayed": 33.95,
+      "avg_pct_viewed": 39.42,
+      "avg_engaged_views": 128.5,
+      "avg_ctr": 1.06
+    },
+    "C2": {
+      "label": "C2 Resources",
+      "count": 3,
+      "avg_stayed": 38.72,
+      "avg_pct_viewed": 75.36,
+      "avg_engaged_views": 212.0,
+      "avg_ctr": 0.82
+    }
+  },
+  "videos": [
+    {
+      "title": "LinkedIn Can Now Label Your Posts AI Slop. Publicly.",
+      "publish_date": "2026-07-31",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 61,
+      "ctr": 5.56,
+      "stayed_to_watch": 35.26,
+      "avg_pct_viewed": 86.21,
+      "subscribers_gained": 0,
+      "composite_score": 0.635
+    },
+    {
+      "title": "Your Chatbot Knows Your Income. You Never Told It.",
+      "publish_date": "2026-07-30",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 21,
+      "ctr": 4.0,
+      "stayed_to_watch": 30.43,
+      "avg_pct_viewed": 83.45,
+      "subscribers_gained": 0,
+      "composite_score": 0.543
+    },
+    {
+      "title": "Elon Musk Says AI Will Make Humans Look Like Chimpanzees",
+      "publish_date": "2026-07-27",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 565,
+      "ctr": 6.55,
+      "stayed_to_watch": 66.87,
+      "avg_pct_viewed": 69.89,
+      "subscribers_gained": 2,
+      "composite_score": 0.986
+    },
+    {
+      "title": "Your Company’s AI Model Chaos. Can You Fix It?",
+      "publish_date": "2026-07-26",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 20,
+      "ctr": 3.11,
+      "stayed_to_watch": 60.61,
+      "avg_pct_viewed": 38.98,
+      "subscribers_gained": 0,
+      "composite_score": 0.554
+    },
+    {
+      "title": "Is Your AI Lying to You? OpenAI's Escape",
+      "publish_date": "2026-07-25",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 535,
+      "ctr": 1.02,
+      "stayed_to_watch": 47.22,
+      "avg_pct_viewed": 58.19,
+      "subscribers_gained": 2,
+      "composite_score": 0.7
+    },
+    {
+      "title": "Your Company Picks AI Models Wrong. Is Yours?\"",
+      "publish_date": "2026-07-24",
+      "category": "B",
+      "sub_category": "B2",
+      "engaged_views": 511,
+      "ctr": 1.83,
+      "stayed_to_watch": 62.01,
+      "avg_pct_viewed": 34.89,
+      "subscribers_gained": 6,
+      "composite_score": 0.722
+    },
+    {
+      "title": "Red teaming  - The One Job AI Can't Do (Yet)",
+      "publish_date": "2026-07-23",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 507,
+      "ctr": 0.82,
+      "stayed_to_watch": 52.54,
+      "avg_pct_viewed": 38.92,
+      "subscribers_gained": 1,
+      "composite_score": 0.654
+    },
+    {
+      "title": "Wikipedia’s AI Detection Secret. Are You Safe?",
+      "publish_date": "2026-07-22",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 498,
+      "ctr": 1.49,
+      "stayed_to_watch": 55.61,
+      "avg_pct_viewed": 48.42,
+      "subscribers_gained": 1,
+      "composite_score": 0.714
+    },
+    {
+      "title": "Stop Ignoring These 4 AI Guardrails",
+      "publish_date": "2026-07-21",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 288,
+      "ctr": 1.29,
+      "stayed_to_watch": 57.06,
+      "avg_pct_viewed": 51.34,
+      "subscribers_gained": 2,
+      "composite_score": 0.639
+    },
+    {
+      "title": "When AI Gets It Right 50 Times, You Fail.",
+      "publish_date": "2026-07-18",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 526,
+      "ctr": 1.56,
+      "stayed_to_watch": 61.1,
+      "avg_pct_viewed": 40.35,
+      "subscribers_gained": 1,
+      "composite_score": 0.733
+    },
+    {
+      "title": "Your AI Assistant: Tool or Relationship?",
+      "publish_date": "2026-07-17",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 588,
+      "ctr": 1.73,
+      "stayed_to_watch": 58.66,
+      "avg_pct_viewed": 64.78,
+      "subscribers_gained": 2,
+      "composite_score": 0.826
+    },
+    {
+      "title": "Meta's AI Water Problem. Is Your Town Next?",
+      "publish_date": "2026-07-16",
+      "category": "A",
+      "sub_category": "A3",
+      "engaged_views": 596,
+      "ctr": 1.44,
+      "stayed_to_watch": 58.74,
+      "avg_pct_viewed": 50.94,
+      "subscribers_gained": 1,
+      "composite_score": 0.779
+    },
+    {
+      "title": "Pretending to Know AI? Andrew Ng Can Fix That.",
+      "publish_date": "2026-07-15",
+      "category": "C",
+      "sub_category": "C2",
+      "engaged_views": 509,
+      "ctr": 1.22,
+      "stayed_to_watch": 53.26,
+      "avg_pct_viewed": 27.2,
+      "subscribers_gained": 3,
+      "composite_score": 0.632
+    },
+    {
+      "title": "Your Junior Knows AI Tokens. Do You?",
+      "publish_date": "2026-07-14",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 193,
+      "ctr": 2.35,
+      "stayed_to_watch": 47.54,
+      "avg_pct_viewed": 58.27,
+      "subscribers_gained": 2,
+      "composite_score": 0.593
+    },
+    {
+      "title": "Why AI Can’t Replace These 350 Engineers",
+      "publish_date": "2026-07-13",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 509,
+      "ctr": 2.15,
+      "stayed_to_watch": 51.94,
+      "avg_pct_viewed": 50.53,
+      "subscribers_gained": 3,
+      "composite_score": 0.721
+    },
+    {
+      "title": "UK Govt Replaces Minds with AI. Are You Safe?",
+      "publish_date": "2026-07-12",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 531,
+      "ctr": 1.09,
+      "stayed_to_watch": 59.73,
+      "avg_pct_viewed": 61.9,
+      "subscribers_gained": 1,
+      "composite_score": 0.783
+    },
+    {
+      "title": "Meta Turned Child Safety Into a Weapon.",
+      "publish_date": "2026-07-11",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 544,
+      "ctr": 4.09,
+      "stayed_to_watch": 49.77,
+      "avg_pct_viewed": 59.66,
+      "subscribers_gained": 1,
+      "composite_score": 0.8
+    },
+    {
+      "title": "Does Your AI Hate the Rich?",
+      "publish_date": "2026-07-09",
+      "category": "A",
+      "sub_category": "A3",
+      "engaged_views": 630,
+      "ctr": 0.21,
+      "stayed_to_watch": 54.2,
+      "avg_pct_viewed": 56.67,
+      "subscribers_gained": 4,
+      "composite_score": 0.755
+    },
+    {
+      "title": "AI Cost Her C$10,000 in Court. You Next?",
+      "publish_date": "2026-07-08",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 552,
+      "ctr": 1.43,
+      "stayed_to_watch": 58.04,
+      "avg_pct_viewed": 51.63,
+      "subscribers_gained": 0,
+      "composite_score": 0.759
+    },
+    {
+      "title": "Elon Musk's plan to save this Cub",
+      "publish_date": "2026-07-07",
+      "category": "A",
+      "sub_category": "A3",
+      "engaged_views": 548,
+      "ctr": 1.32,
+      "stayed_to_watch": 43.12,
+      "avg_pct_viewed": 60.65,
+      "subscribers_gained": 1,
+      "composite_score": 0.697
+    },
+    {
+      "title": "The AI Elite Just Made $365K Poor",
+      "publish_date": "2026-07-06",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 252,
+      "ctr": 1.26,
+      "stayed_to_watch": 46.15,
+      "avg_pct_viewed": 39.51,
+      "subscribers_gained": 0,
+      "composite_score": 0.524
+    },
+    {
+      "title": "AI Just Stole His Identity. You’re Next.",
+      "publish_date": "2026-07-02",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 547,
+      "ctr": 1.54,
+      "stayed_to_watch": 67.28,
+      "avg_pct_viewed": 43.1,
+      "subscribers_gained": 1,
+      "composite_score": 0.786
+    },
+    {
+      "title": "The Tesla Bug That Saved a Life",
+      "publish_date": "2026-07-01",
+      "category": "A",
+      "sub_category": "A3",
+      "engaged_views": 582,
+      "ctr": 1.45,
+      "stayed_to_watch": 54.51,
+      "avg_pct_viewed": 67.01,
+      "subscribers_gained": 0,
+      "composite_score": 0.8
+    },
+    {
+      "title": "AI Now Fact-Checks What You Hear. Live.",
+      "publish_date": "2026-06-30",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 529,
+      "ctr": 2.04,
+      "stayed_to_watch": 46.46,
+      "avg_pct_viewed": 37.13,
+      "subscribers_gained": 0,
+      "composite_score": 0.653
+    },
+    {
+      "title": "AI's Biggest Problem? It Needs a Philosopher.",
+      "publish_date": "2026-06-29",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 379,
+      "ctr": 2.54,
+      "stayed_to_watch": 57.85,
+      "avg_pct_viewed": 65.34,
+      "subscribers_gained": 10,
+      "composite_score": 0.756
+    },
+    {
+      "title": "Your Company's Secret AI Is Better Than Claude",
+      "publish_date": "2026-06-25",
+      "category": "B",
+      "sub_category": "B2",
+      "engaged_views": 71,
+      "ctr": 1.1,
+      "stayed_to_watch": 41.28,
+      "avg_pct_viewed": 60.66,
+      "subscribers_gained": 0,
+      "composite_score": 0.483
+    },
+    {
+      "title": "How AI is making you a better writer",
+      "publish_date": "2026-06-24",
+      "category": "C",
+      "sub_category": "C1",
+      "engaged_views": 185,
+      "ctr": 1.51,
+      "stayed_to_watch": 36.25,
+      "avg_pct_viewed": 42.49,
+      "subscribers_gained": 0,
+      "composite_score": 0.455
+    },
+    {
+      "title": "The Hidden Cost of Replacing Humans with AI.",
+      "publish_date": "2026-06-23",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 346,
+      "ctr": 0.43,
+      "stayed_to_watch": 38.04,
+      "avg_pct_viewed": 62.15,
+      "subscribers_gained": 0,
+      "composite_score": 0.567
+    },
+    {
+      "title": "Stanford Gave AI a Team. Here's What Happened.",
+      "publish_date": "2026-06-22",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 442,
+      "ctr": 0.54,
+      "stayed_to_watch": 47.21,
+      "avg_pct_viewed": 83.62,
+      "subscribers_gained": 4,
+      "composite_score": 0.729
+    },
+    {
+      "title": "China Swapped 12,200 Degrees for AI. Was It Right?",
+      "publish_date": "2026-06-18",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 600,
+      "ctr": 2.39,
+      "stayed_to_watch": 49.18,
+      "avg_pct_viewed": 56.0,
+      "subscribers_gained": 2,
+      "composite_score": 0.766
+    },
+    {
+      "title": "Anthropic Shut Down Its Own AI. Here Is Why.",
+      "publish_date": "2026-06-17",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 547,
+      "ctr": 1.76,
+      "stayed_to_watch": 53.56,
+      "avg_pct_viewed": 60.75,
+      "subscribers_gained": 2,
+      "composite_score": 0.768
+    },
+    {
+      "title": "The AI Off Switch Won't Work. Here Is Why",
+      "publish_date": "2026-06-16",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 517,
+      "ctr": 1.76,
+      "stayed_to_watch": 58.46,
+      "avg_pct_viewed": 43.73,
+      "subscribers_gained": 2,
+      "composite_score": 0.73
+    },
+    {
+      "title": "AI Created the World's First Trillionaire. What's Your Share?",
+      "publish_date": "2026-06-15",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 208,
+      "ctr": 1.62,
+      "stayed_to_watch": 21.57,
+      "avg_pct_viewed": 72.58,
+      "subscribers_gained": 0,
+      "composite_score": 0.477
+    },
+    {
+      "title": "2 Years of Work. AI Did It in 5 Days",
+      "publish_date": "2026-06-11",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 585,
+      "ctr": 2.05,
+      "stayed_to_watch": 56.05,
+      "avg_pct_viewed": 66.28,
+      "subscribers_gained": 1,
+      "composite_score": 0.822
+    },
+    {
+      "title": "Why Elon Musk is Wrong About Meat Computers?",
+      "publish_date": "2026-06-10",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 533,
+      "ctr": 1.97,
+      "stayed_to_watch": 46.96,
+      "avg_pct_viewed": 68.7,
+      "subscribers_gained": 3,
+      "composite_score": 0.754
+    },
+    {
+      "title": "The Moment AI No Longer Needs Us",
+      "publish_date": "2026-06-09",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 596,
+      "ctr": 1.47,
+      "stayed_to_watch": 52.2,
+      "avg_pct_viewed": 90.46,
+      "subscribers_gained": 0,
+      "composite_score": 0.866
+    },
+    {
+      "title": "Agent A.I. and Bond have much in common",
+      "publish_date": "2026-06-08",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 223,
+      "ctr": 2.26,
+      "stayed_to_watch": 47.35,
+      "avg_pct_viewed": 44.6,
+      "subscribers_gained": 0,
+      "composite_score": 0.559
+    },
+    {
+      "title": "AI Is Making You Replaceable. Not Like You Think.",
+      "publish_date": "2026-06-05",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 415,
+      "ctr": 1.24,
+      "stayed_to_watch": 42.78,
+      "avg_pct_viewed": 55.88,
+      "subscribers_gained": 2,
+      "composite_score": 0.623
+    },
+    {
+      "title": "Anthropic Just Built an AI That Disagrees With You",
+      "publish_date": "2026-06-04",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 523,
+      "ctr": 1.3,
+      "stayed_to_watch": 45.29,
+      "avg_pct_viewed": 59.26,
+      "subscribers_gained": 0,
+      "composite_score": 0.694
+    },
+    {
+      "title": "This CEO Just Named AI's Next Target. Is It You?",
+      "publish_date": "2026-06-03",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 559,
+      "ctr": 0.75,
+      "stayed_to_watch": 59.79,
+      "avg_pct_viewed": 68.75,
+      "subscribers_gained": 0,
+      "composite_score": 0.808
+    },
+    {
+      "title": "AI Created a Fear   Worse Than FOMO 🤖",
+      "publish_date": "2026-06-02",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 135,
+      "ctr": 2.25,
+      "stayed_to_watch": 34.01,
+      "avg_pct_viewed": 48.19,
+      "subscribers_gained": 0,
+      "composite_score": 0.457
+    },
+    {
+      "title": "Did the Pope use AI for that?",
+      "publish_date": "2026-05-28",
+      "category": "A",
+      "sub_category": "A3",
+      "engaged_views": 531,
+      "ctr": 2.11,
+      "stayed_to_watch": 55.72,
+      "avg_pct_viewed": 64.14,
+      "subscribers_gained": 4,
+      "composite_score": 0.793
+    },
+    {
+      "title": "Why Your IT Department Hates ChatGPT",
+      "publish_date": "2026-05-27",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 159,
+      "ctr": 2.61,
+      "stayed_to_watch": 22.05,
+      "avg_pct_viewed": 56.47,
+      "subscribers_gained": 0,
+      "composite_score": 0.434
+    },
+    {
+      "title": "The Pope’s Secret AI Meeting",
+      "publish_date": "2026-05-26",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 244,
+      "ctr": 1.3,
+      "stayed_to_watch": 43.24,
+      "avg_pct_viewed": 53.14,
+      "subscribers_gained": 0,
+      "composite_score": 0.547
+    },
+    {
+      "title": "What's Actually Behind Every ChatGPT Response?",
+      "publish_date": "2026-05-25",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 167,
+      "ctr": 1.56,
+      "stayed_to_watch": 41.88,
+      "avg_pct_viewed": 61.42,
+      "subscribers_gained": 3,
+      "composite_score": 0.54
+    },
+    {
+      "title": "He Lost $400k in Bitcoin. AI Found It.",
+      "publish_date": "2026-05-24",
+      "category": "C",
+      "sub_category": "C1",
+      "engaged_views": 72,
+      "ctr": 0.6,
+      "stayed_to_watch": 31.65,
+      "avg_pct_viewed": 36.36,
+      "subscribers_gained": 0,
+      "composite_score": 0.339
+    },
+    {
+      "title": "AI weds Religion 🤖",
+      "publish_date": "2026-05-22",
+      "category": "A",
+      "sub_category": "A3",
+      "engaged_views": 83,
+      "ctr": 2.68,
+      "stayed_to_watch": 26.49,
+      "avg_pct_viewed": 55.46,
+      "subscribers_gained": 0,
+      "composite_score": 0.426
+    },
+    {
+      "title": "Before You Paste Anything Into ChatGPT at Work... #ailiteracy",
+      "publish_date": "2026-05-07",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 39,
+      "ctr": 2.07,
+      "stayed_to_watch": 26.87,
+      "avg_pct_viewed": 37.4,
+      "subscribers_gained": 1,
+      "composite_score": 0.338
+    },
+    {
+      "title": "The Best Free AI Course Nobody Told You About  #ailiteracy",
+      "publish_date": "2026-05-06",
+      "category": "C",
+      "sub_category": "C2",
+      "engaged_views": 46,
+      "ctr": 0.58,
+      "stayed_to_watch": 36.52,
+      "avg_pct_viewed": 145.04,
+      "subscribers_gained": 0,
+      "composite_score": 0.617
+    },
+    {
+      "title": "The AI Even Its Creators Won't Release #ailiteracy",
+      "publish_date": "2026-05-04",
+      "category": "A",
+      "sub_category": "A1",
+      "engaged_views": 156,
+      "ctr": 1.03,
+      "stayed_to_watch": 45.98,
+      "avg_pct_viewed": 53.83,
+      "subscribers_gained": 0,
+      "composite_score": 0.522
+    },
+    {
+      "title": "This Free AI Course Starts By Asking Your Job. Here's Why. #ailiteracy",
+      "publish_date": "2026-05-01",
+      "category": "C",
+      "sub_category": "C2",
+      "engaged_views": 81,
+      "ctr": 0.66,
+      "stayed_to_watch": 26.38,
+      "avg_pct_viewed": 53.84,
+      "subscribers_gained": 0,
+      "composite_score": 0.369
+    },
+    {
+      "title": "Two Kinds of LLM. Do You Know the Difference? #ailiteracy",
+      "publish_date": "2026-04-30",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 55,
+      "ctr": 0.58,
+      "stayed_to_watch": 41.04,
+      "avg_pct_viewed": 48.13,
+      "subscribers_gained": 1,
+      "composite_score": 0.422
+    },
+    {
+      "title": "What Is an LLM? (If You're Not a Developer)",
+      "publish_date": "2026-04-28",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 103,
+      "ctr": 2.0,
+      "stayed_to_watch": 45.02,
+      "avg_pct_viewed": 39.08,
+      "subscribers_gained": 3,
+      "composite_score": 0.472
+    },
+    {
+      "title": "What Is RAG? Why Claude and ChatGPT Can't Read Your Documents",
+      "publish_date": "2026-04-26",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 245,
+      "ctr": 1.97,
+      "stayed_to_watch": 52.63,
+      "avg_pct_viewed": 44.94,
+      "subscribers_gained": 3,
+      "composite_score": 0.593
+    },
+    {
+      "title": "AI Won't Replace You (But This Will) #ailiteracy",
+      "publish_date": "2026-04-23",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 25,
+      "ctr": 0.81,
+      "stayed_to_watch": 24.51,
+      "avg_pct_viewed": 40.72,
+      "subscribers_gained": 0,
+      "composite_score": 0.298
+    },
+    {
+      "title": "Why Your Job Might Be Safer Than You Think",
+      "publish_date": "2026-04-22",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 101,
+      "ctr": 1.31,
+      "stayed_to_watch": 37.04,
+      "avg_pct_viewed": 46.2,
+      "subscribers_gained": 1,
+      "composite_score": 0.431
+    },
+    {
+      "title": "The Jobs Disappearing Fastest Aren't Manual. They're White-Collar.",
+      "publish_date": "2026-04-21",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 51,
+      "ctr": 1.67,
+      "stayed_to_watch": 28.98,
+      "avg_pct_viewed": 30.58,
+      "subscribers_gained": 0,
+      "composite_score": 0.324
+    },
+    {
+      "title": "The ATM Was Supposed to Kill This Job. It Didn't.",
+      "publish_date": "2026-04-20",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 186,
+      "ctr": 0.88,
+      "stayed_to_watch": 46.7,
+      "avg_pct_viewed": 43.98,
+      "subscribers_gained": 0,
+      "composite_score": 0.504
+    },
+    {
+      "title": "AI and Job. The Truth.",
+      "publish_date": "2026-04-19",
+      "category": "A",
+      "sub_category": "A2",
+      "engaged_views": 33,
+      "ctr": 1.53,
+      "stayed_to_watch": 19.5,
+      "avg_pct_viewed": 42.38,
+      "subscribers_gained": 0,
+      "composite_score": 0.296
+    },
+    {
+      "title": "3 Checks Before You Trust AI",
+      "publish_date": "2026-04-15",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 37,
+      "ctr": 0.63,
+      "stayed_to_watch": 12.46,
+      "avg_pct_viewed": 30.76,
+      "subscribers_gained": 0,
+      "composite_score": 0.198
+    },
+    {
+      "title": "AI is not lying!",
+      "publish_date": "2026-04-14",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 45,
+      "ctr": 0.8,
+      "stayed_to_watch": 18.22,
+      "avg_pct_viewed": 45.83,
+      "subscribers_gained": 0,
+      "composite_score": 0.286
+    },
+    {
+      "title": "AI Knows Everything. Except What Happened Yesterday.",
+      "publish_date": "2026-04-13",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 69,
+      "ctr": 0.99,
+      "stayed_to_watch": 25.37,
+      "avg_pct_viewed": 42.54,
+      "subscribers_gained": 0,
+      "composite_score": 0.331
+    },
+    {
+      "title": "AI Couldn't Count Letters. Here's Why.",
+      "publish_date": "2026-04-11",
+      "category": "B",
+      "sub_category": "B1",
+      "engaged_views": 454,
+      "ctr": 8.12,
+      "stayed_to_watch": 41.89,
+      "avg_pct_viewed": 65.87,
+      "subscribers_gained": 0,
+      "composite_score": 0.784
+    }
+  ],
+  "top_performers": [
+    {
+      "rank": 1,
+      "title": "The Moment AI No Longer Needs Us",
+      "category": "A",
+      "sub_category": "A1",
+      "reason": "OKR score: 0.866 | Stayed: 52.2% | Avg % Viewed: 90.46% | Engaged: 596 | CTR: 1.47%"
+    },
+    {
+      "rank": 2,
+      "title": "2 Years of Work. AI Did It in 5 Days",
+      "category": "A",
+      "sub_category": "A2",
+      "reason": "OKR score: 0.822 | Stayed: 56.05% | Avg % Viewed: 66.28% | Engaged: 585 | CTR: 2.05%"
+    },
+    {
+      "rank": 3,
+      "title": "This CEO Just Named AI's Next Target. Is It You?",
+      "category": "A",
+      "sub_category": "A2",
+      "reason": "OKR score: 0.808 | Stayed: 59.79% | Avg % Viewed: 68.75% | Engaged: 559 | CTR: 0.75%"
+    }
+  ],
+  "bottom_performers": [
+    {
+      "rank": 1,
+      "title": "3 Checks Before You Trust AI",
+      "category": "B",
+      "sub_category": "B1",
+      "reason": "OKR score: 0.198 | Stayed: 12.46% | Avg % Viewed: 30.76% | Engaged: 37 | CTR: 0.63%"
+    },
+    {
+      "rank": 2,
+      "title": "AI is not lying!",
+      "category": "B",
+      "sub_category": "B1",
+      "reason": "OKR score: 0.286 | Stayed: 18.22% | Avg % Viewed: 45.83% | Engaged: 45 | CTR: 0.8%"
+    },
+    {
+      "rank": 3,
+      "title": "AI and Job. The Truth.",
+      "category": "A",
+      "sub_category": "A2",
+      "reason": "OKR score: 0.296 | Stayed: 19.5% | Avg % Viewed: 42.38% | Engaged: 33 | CTR: 1.53%"
+    }
+  ],
+  "outliers": {
+    "best_ctr": {
+      "title": "AI Couldn't Count Letters. Here's Why.",
+      "value": 8.12,
+      "unit": "%",
+      "sub_category": "B1",
+      "publish_date": "2026-04-11",
+      "note": "Best packaging signal on the channel. Study this title/thumbnail combination."
+    },
+    "best_stayed": {
+      "title": "AI Just Stole His Identity. You’re Next.",
+      "value": 67.28,
+      "unit": "%",
+      "sub_category": "A1",
+      "publish_date": "2026-07-02",
+      "note": "Best hook on the channel. The first 2-3 seconds of this video should be a template."
+    },
+    "best_pct_viewed": {
+      "title": "The Best Free AI Course Nobody Told You About  #ailiteracy",
+      "value": 145.04,
+      "unit": "%",
+      "sub_category": "C2",
+      "publish_date": "2026-05-06",
+      "note": "Above 100% — viewers are looping/replaying. Exceptional content."
+    },
+    "best_subs": {
+      "title": "AI's Biggest Problem? It Needs a Philosopher.",
+      "value": 10,
+      "unit": "",
+      "sub_category": "A1",
+      "publish_date": "2026-06-29",
+      "note": "Most subscribers from a single video. This is the conversion template — study what it promised and delivered."
+    },
+    "worst_ctr_recent": {
+      "title": "Red teaming  - The One Job AI Can't Do (Yet)",
+      "value": 0.82,
+      "unit": "%",
+      "sub_category": "B1",
+      "publish_date": "2026-07-23",
+      "note": "Lowest CTR in the last 12 videos. Title or thumbnail is failing to earn the click — test a repackage."
+    },
+    "worst_stayed_recent": {
+      "title": "Your Chatbot Knows Your Income. You Never Told It.",
+      "value": 30.43,
+      "unit": "%",
+      "sub_category": "A1",
+      "publish_date": "2026-07-30",
+      "note": "Worst hook in the last 12 videos. First 1-3 seconds are not creating tension — rewrite the opening before the next similar topic."
+    }
+  },
+  "patterns": [
+    "Category mix: 43 News (68%), 15 Vocab (24%), 5 Someone Did This (8%) — News-heavy; Vocab underrepresented at 24% vs 25% target.",
+    "Vocab (B) generates 1.5 subs/video vs News (A) at 1.2/video — confirming the 6x subscriber conversion advantage. Every B short pulls harder on growth.",
+    "A3 (A3 Indirect Trend) leads on engaged views at 468 avg across 5 videos.",
+    "B2 (B2 Manager Decisions) leads on Stayed to Watch at 50.3% — strongest hook performance.",
+    "A2 (A2 Jobs & Economy) has the highest non-feed CTR at 2.02% — best title/thumbnail signal.",
+    "Recent trend (last 6 vs previous 6): Stayed to Watch ↓ 6.9pp (50.4% vs 57.3%). Hook quality declining — review first 3 seconds in recent scripts.",
+    "Avg % Viewed (55.0%) runs only 10.3pp above Stayed to Watch (44.7%) — people who don't stay are swiping in the first 1–2 seconds. Mid-video content is NOT the problem; the hook decision is binary.",
+    "C (Someone Did This) has only 5 videos (8%) — this aspiration engine is almost untested. C2 shows the highest Avg % Viewed (75.36%) of any sub-category."
+  ],
+  "recommendations": [
+    "Stayed to Watch (53.8%, last 12) is in amber. Hook must state professional stakes in the first 2 seconds. Benchmark: AI Just Stole His Identity. You’re Next. (67.28% stayed). Run hook rubric before every recording.",
+    "CTR (2.53%) below 4% target. Best channel title: 'AI Couldn't Count Letters. Here's Why.' at 8.12% CTR — specificity + stakes = clicks. Test number-led and name-led titles on next 3 shorts.",
+    "Vocab (B) is 24% of catalogue but generates 1.5 subs/video. Increase to 2 Vocab shorts/week — alternate B1 (meeting terms) and B2 (manager decisions)."
+  ]
+}
