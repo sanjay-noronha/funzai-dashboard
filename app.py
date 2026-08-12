@@ -164,7 +164,7 @@ st.markdown("""
 
 # ─── PATHS ────────────────────────────────────────────────────────────────────
 BASE_DIR     = os.path.dirname(__file__)
-LOGO_PATH    = os.path.join(BASE_DIR, "..", "logos", "funza_logo_transparent.png")
+LOGO_PATH    = os.path.join(BASE_DIR, "funza_logo_transparent.png")
 INSIGHTS_DIR = os.path.join(BASE_DIR, "weekly_insights")
 LONGS_DIR    = os.path.join(BASE_DIR, "..", "YouTubeAnalytics", "Longs")
 
@@ -1061,10 +1061,7 @@ def sidebar():
         if os.path.exists(LOGO_PATH):
             st.image(LOGO_PATH, use_container_width=True)
         else:
-            st.markdown("## 🎓 FunzAI")
-
-        st.markdown("**Internal Channel Dashboard**")
-        st.markdown("---")
+            st.markdown("## FunzAI")
 
         today    = date.today()
         week_num = today.isocalendar()[1]
@@ -1072,25 +1069,16 @@ def sidebar():
         wl_rev   = weeks_left(REVENUE_END_DATE)
 
         st.markdown(f"""
-        <div class="sb-card">
-            <div class="sb-label">Status</div>
-            <div class="sb-row">
+        <div class="sb-card" style="padding:1.1rem 1.2rem;">
+            <div class="sb-label" style="font-size:0.75rem;margin-bottom:0.7rem;">STATUS</div>
+            <div style="font-size:1rem;line-height:2.1;color:#f0f0f0;">
                 <strong>Today</strong> &nbsp; {today.strftime('%d %b %Y')}<br>
                 <strong>Week</strong> &nbsp; Week {week_num} of 2026<br>
-                <strong>OKR deadline</strong> &nbsp; Dec 31, 2026 ({wl_okr} wks)<br>
-                <strong>Revenue target</strong> &nbsp; Dec 31, 2027 ({wl_rev} wks)
+                <strong>OKR deadline</strong> &nbsp; Dec 31, 2026 &nbsp;
+                    <span style="color:#de0f3f;font-size:1.15rem;font-weight:700;">{wl_okr} wks</span><br>
+                <strong>Revenue target</strong> &nbsp; Dec 31, 2027 &nbsp;
+                    <span style="color:#de0f3f;font-size:1.15rem;font-weight:700;">{wl_rev} wks</span>
             </div>
-        </div>
-        """, unsafe_allow_html=True)
-
-        st.markdown("""
-        <div class="sb-card">
-            <div class="sb-label">Weekly Cadence</div>
-            <div class="sb-row">
-                Target: 2 longs + 3 shorts<br>
-                Minimum: 2 longs + 2 shorts
-            </div>
-            <div class="sb-protected">🔒 LONGS ARE PROTECTED</div>
         </div>
         """, unsafe_allow_html=True)
 
