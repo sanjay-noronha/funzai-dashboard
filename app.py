@@ -2534,6 +2534,67 @@ No upload to the dashboard required — Claude writes the file directly.
             """)
 
     with ref_tab3:
+        with st.expander("📅  Video Cadence", expanded=True):
+            st.markdown("""
+**Target:** 2 Longs (L) + 3 Shorts (S) every week &nbsp;·&nbsp; **Minimum:** 2 Longs + 2 Shorts
+> If anything must be cut — drop a Short. Never a Long.
+""")
+            col1, col2 = st.columns(2)
+            with col1:
+                st.markdown("**Legend**")
+                st.markdown("""
+| Code | Meaning |
+|---|---|
+| L | Long video |
+| S | Short video |
+| EOD | End of day |
+""")
+            with col2:
+                st.markdown("**Responsibilities**")
+                st.markdown("""
+| Task | Sanjay | Shailee |
+|---|---|---|
+| Script writing | L, S | — |
+| Script review | — | L, S |
+| Video creation | L, S | — |
+| Video editing (Descript) | L | S |
+| Metadata (excl. title & thumbnail) | L, S | — |
+| Title & thumbnail | — | L, S |
+| Publishing | L, S | — |
+""")
+            st.markdown("---")
+            col3, col4, col5 = st.columns(3)
+            with col3:
+                st.markdown("**Script Release**")
+                st.markdown("""
+| Video | Deadline |
+|---|---|
+| L1 | Tue EOD |
+| L2 | Thu EOD |
+| S1 | Sat EOD |
+| S2, S3 | Sun EOD |
+""")
+            with col4:
+                st.markdown("**Script Review**")
+                st.markdown("""
+| Video | Deadline |
+|---|---|
+| L1 | Wed EOD |
+| L2 | Fri EOD |
+| S1, S2, S3 | Mon EOD |
+""")
+            with col5:
+                st.markdown("**Publish Schedule (Midnight)**")
+                st.markdown("""
+| Day | Video |
+|---|---|
+| Monday | L1 |
+| Tuesday | L2 |
+| Wednesday | S1 |
+| Thursday | S2 |
+| Friday | S3 |
+""")
+
         with st.expander("🎯  Topic Selection Workflow", expanded=True):
             st.markdown(
                 '<div style="font-size:0.82rem;color:#aaa;margin-bottom:1.2rem">'
