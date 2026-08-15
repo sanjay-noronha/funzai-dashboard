@@ -463,6 +463,57 @@ def save_week(row: dict):
         st.error(f"Database error: {e}")
         return False
 
+# ─── LONGS ANALYTICS PERSISTENCE ─────────────────────────────────────────────
+
+def load_longs_analytics() -> pd.DataFrame:
+    try:
+        con = _conn()
+        try:
+            con.rollback()  # clear any aborted-transaction state before reading
+        except Exception:
+            pass
+        cur = con.cursor()
+        cur.execute(
+            "SELECT content_id, video_title, publish_time, views, ctr_pct, avg_pct_viewed, "
+            "subscribers_gained, uploaded_at FROM longs_analytics ORDER BY publish_time DESC"
+        )
+        return _fetchdf(cur)
+    except Exception as e:
+        st.warning(f"Could not load longs data from database: {e}")
+        return pd.DataFrame()
+
+
+def save_longs_analytics(df: pd.DataFrame):
+    con = _conn()
+    cur = con.cursor()
+    for _, row in df.iterrows():
+        cur.execute(
+            """
+            INSERT INTO longs_analytics
+                (content_id, video_title, publish_time, views, ctr_pct, avg_pct_viewed,
+                 subscribers_gained, uploaded_at)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, NOW())
+            ON CONFLICT (content_id) DO UPDATE SET
+                video_title        = EXCLUDED.video_title,
+                publish_time       = EXCLUDED.publish_time,
+                views              = EXCLUDED.views,
+                ctr_pct            = EXCLUDED.ctr_pct,
+                avg_pct_viewed     = EXCLUDED.avg_pct_viewed,
+                subscribers_gained = EXCLUDED.subscribers_gained,
+                uploaded_at        = NOW()
+            """,
+            (
+                str(row.get("Content", "")),
+                str(row.get("Video title", "")),
+                str(row.get("Video publish time", "")),
+                int(row.get("Views", 0) or 0),
+                float(row.get("Impressions click-through rate (%)", 0) or 0),
+                float(row.get("Average percentage viewed (%)", 0) or 0),
+                int(row.get("Subscribers gained", 0) or 0),
+            ),
+        )
+    con.commit()
+
 # ─── KR PROGRESS HELPERS ─────────────────────────────────────────────────────
 
 def load_kr_progress() -> dict:
@@ -2135,38 +2186,53 @@ def _tab_intelligence_longs():
     """Long-form per-video analysis with rubric-based guidance."""
     PRIORITY_ICON = {"high": "🔴", "medium": "🟡", "low": "🟢", "healthy": "✅"}
 
-    longs_files = sorted(glob.glob(os.path.join(LONGS_DIR, "*.xlsx")), reverse=True)
+    # ── Load from Supabase ─────────────────────────────────────────────────
+    db_raw = load_longs_analytics()
 
-    if longs_files:
-        labels = [os.path.basename(f).replace(".xlsx", "") for f in longs_files]
-        choice = st.selectbox("Select analytics file", labels, key="longs_file_sel")
-        chosen = longs_files[labels.index(choice)]
-        try:
-            raw = pd.read_excel(chosen, sheet_name="Table data")
-        except Exception as e:
-            st.error(f"Could not read file: {e}")
-            return
-    else:
-        uploaded = st.file_uploader(
-            "Upload YouTube Long Analytics Excel (All time export)",
-            type=["xlsx"],
-            key="longs_upload",
-        )
-        if not uploaded:
-            st.info("Download your Longs Analytics Excel from YouTube Studio → Analytics → Content → Videos → Export (All time), then upload it here.")
-            return
-        try:
-            raw = pd.read_excel(uploaded, sheet_name="Table data")
-        except Exception as e:
-            st.error(f"Could not read file: {e}")
-            return
+    # ── Upload section — collapsed when data exists, expanded when empty ───
+    upload_label = (
+        "🔄 Refresh data — upload latest YouTube export"
+        if not db_raw.empty
+        else "📤 Upload YouTube Long Analytics Excel (All time export)"
+    )
+    with st.expander(upload_label, expanded=db_raw.empty):
+        st.caption("YouTube Studio → Analytics → Content tab → Videos → Export as Excel (All time)")
+        uploaded = st.file_uploader("Select Excel file", type=["xlsx"], key="longs_upload")
+        if uploaded:
+            try:
+                raw_excel = pd.read_excel(uploaded, sheet_name="Table data")
+                to_save   = raw_excel[
+                    (raw_excel["Content"] != "Total") & raw_excel["Video title"].notna()
+                ]
+                save_longs_analytics(to_save)
+                db_raw = load_longs_analytics()  # reload inline — avoids infinite rerun loop
+                st.success(f"Saved {len(to_save)} videos. Data updated below.")
+            except Exception as e:
+                st.error(f"Could not process file: {e}")
+                return
 
-    # Filter out Total row and any row with no video title
-    df = raw[(raw["Content"] != "Total") & raw["Video title"].notna()].copy()
+    if db_raw.empty:
+        st.info("No data yet — upload your YouTube Longs Analytics Excel above to get started.")
+        return
+
+    # ── Reconstruct df with original column names so the rest of the function is unchanged ──
+    df = db_raw.rename(columns={
+        "content_id":         "Content",
+        "video_title":        "Video title",
+        "publish_time":       "Video publish time",
+        "views":              "Views",
+        "ctr_pct":            "Impressions click-through rate (%)",
+        "avg_pct_viewed":     "Average percentage viewed (%)",
+        "subscribers_gained": "Subscribers gained",
+    }).copy()
     for fmt in ["%b %d, %Y", "%B %d, %Y", "%Y-%m-%d"]:
         parsed = pd.to_datetime(df["Video publish time"], format=fmt, errors="coerce")
         df["publish_date"] = df.get("publish_date", pd.NaT).fillna(parsed) if "publish_date" in df else parsed
     df = df.sort_values("publish_date", ascending=False).reset_index(drop=True)
+
+    if "uploaded_at" in db_raw.columns and db_raw["uploaded_at"].notna().any():
+        last_ts = pd.to_datetime(db_raw["uploaded_at"]).max()
+        st.caption(f"Data last refreshed: {last_ts.strftime('%d %b %Y %H:%M')}")
 
     # ── Summary stats ──────────────────────────────────────────────────────
     st.markdown('<div class="section-head">OVERVIEW</div>', unsafe_allow_html=True)
