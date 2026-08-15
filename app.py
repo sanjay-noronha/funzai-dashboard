@@ -2136,22 +2136,30 @@ def _tab_intelligence_longs():
     PRIORITY_ICON = {"high": "🔴", "medium": "🟡", "low": "🟢", "healthy": "✅"}
 
     longs_files = sorted(glob.glob(os.path.join(LONGS_DIR, "*.xlsx")), reverse=True)
-    if not longs_files:
-        st.info(
-            "No long-form analytics files found.\n\n"
-            f"Place YouTube Long Analytics Excel files in:\n`YouTubeAnalytics/Longs/`"
+
+    if longs_files:
+        labels = [os.path.basename(f).replace(".xlsx", "") for f in longs_files]
+        choice = st.selectbox("Select analytics file", labels, key="longs_file_sel")
+        chosen = longs_files[labels.index(choice)]
+        try:
+            raw = pd.read_excel(chosen, sheet_name="Table data")
+        except Exception as e:
+            st.error(f"Could not read file: {e}")
+            return
+    else:
+        uploaded = st.file_uploader(
+            "Upload YouTube Long Analytics Excel (All time export)",
+            type=["xlsx"],
+            key="longs_upload",
         )
-        return
-
-    labels = [os.path.basename(f).replace(".xlsx", "") for f in longs_files]
-    choice = st.selectbox("Select analytics file", labels, key="longs_file_sel")
-    chosen = longs_files[labels.index(choice)]
-
-    try:
-        raw = pd.read_excel(chosen, sheet_name="Table data")
-    except Exception as e:
-        st.error(f"Could not read file: {e}")
-        return
+        if not uploaded:
+            st.info("Download your Longs Analytics Excel from YouTube Studio → Analytics → Content → Videos → Export (All time), then upload it here.")
+            return
+        try:
+            raw = pd.read_excel(uploaded, sheet_name="Table data")
+        except Exception as e:
+            st.error(f"Could not read file: {e}")
+            return
 
     # Filter out Total row and any row with no video title
     df = raw[(raw["Content"] != "Total") & raw["Video title"].notna()].copy()
