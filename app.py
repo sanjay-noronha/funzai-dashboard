@@ -3042,6 +3042,64 @@ This does not mean keyword-stuffing the hook. It means ensuring the natural stor
 **Tags:** Secondary signal only. YouTube gives minimal weight to the tag box compared to spoken transcripts and description metadata. Fill tags per the rubric above — but do not rely on them for discovery.
 """)
 
+        with st.expander("✅  Production Checklist — Shorts & Long-Form"):
+            st.markdown("""
+**Run this checklist before every upload — shorts and long-form.**
+
+---
+
+**📝 Script**
+- [ ] Script has been reviewed
+- [ ] Hook has been scored against the hook rubric
+
+---
+
+**🎥 Recording**
+- [ ] No disturbing background e.g. red lighting, unnecessary objects
+- [ ] Sanjay is presentable
+- [ ] Rule of thirds applied
+- [ ] Sanjay in full frame — head not touching border of frame
+- [ ] Eye contact with camera lens maintained
+- [ ] Audio levels checked before recording
+
+---
+
+**✂️ Editing**
+- [ ] No gaps at start and end of video
+- [ ] Video speed is correct
+- [ ] Video lighting is correct
+- [ ] No long word gaps
+- [ ] Studio sound enabled
+- [ ] Scene transitions are clean — no caption jumps
+- [ ] B-roll used is appropriate
+- [ ] Captions are consistent — font, size
+- [ ] Captions are positioned correctly in the frame
+- [ ] Like and Subscribe GIF is consistent
+- [ ] Audiogram text is correct — size, font, bold
+- [ ] Hook stands out
+
+---
+
+**🏷️ Video Metadata**
+- [ ] Description is complete and formatted correctly
+- [ ] Tags are added in YouTube Studio
+- [ ] Title is finalised and matches rubric score
+
+---
+
+**🚀 Pre-Upload**
+- [ ] Video is uploaded as Unlisted at least 2 hours before go-live
+- [ ] Scheduled to go Public at 18:00 ET (New York)
+
+---
+
+**📺 Long-Form Only**
+- [ ] Chapter markers are accurate and timestamped correctly
+- [ ] End screen is set up
+- [ ] Cards are added
+- [ ] A/B test set up for title and thumbnail — YouTube Test & Compare
+            """)
+
 
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 
