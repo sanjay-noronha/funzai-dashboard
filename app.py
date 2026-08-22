@@ -2768,6 +2768,175 @@ Assign the lane before moving to Step 3.
 '</div>', unsafe_allow_html=True,
             )
 
+        with st.expander("🔍  Topic Research System — How to Find Video Ideas"):
+            st.markdown(
+                '<div style="font-size:0.82rem;color:#aaa;margin-bottom:1.2rem">'
+                'A repeatable system for finding what Marisa and Sevrien actually want — not by guessing, '
+                'but by going where they already express their needs. Use these sources to generate candidates '
+                'for Step 1 of the Topic Selection Workflow above.'
+                '</div>', unsafe_allow_html=True,
+            )
+
+            # Core insight
+            st.markdown(
+'<div style="background:#1a2744;border-left:3px solid #4e8cff;border-radius:6px;'
+'padding:0.8rem 1rem;margin-bottom:0.8rem">'
+'<div style="font-size:0.7rem;color:#4e8cff;font-weight:700;letter-spacing:0.05em;margin-bottom:0.4rem">'
+'THE CORE INSIGHT</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7">'
+'Non-technical professionals do not fragment by industry the way technical audiences do. '
+'The anxiety is universal — the industry is just the costume. '
+'A doctor, a lawyer, an HR manager, a teacher — same fears, same questions about AI. '
+'<strong style="color:#fff">Non-technical = not a programmer. That is the only exclusion.</strong><br><br>'
+'Personal and professional are the same person. Whole-person Marisa is in scope — '
+'do not filter out a topic just because it surfaces in a consumer community.'
+'</div>'
+'</div>', unsafe_allow_html=True,
+            )
+
+            # The Triangle
+            st.markdown(
+'<div style="background:#1e1e2e;border-left:3px solid #f39c12;border-radius:6px;'
+'padding:0.8rem 1rem;margin-bottom:0.8rem">'
+'<div style="font-size:0.7rem;color:#f39c12;font-weight:700;letter-spacing:0.05em;margin-bottom:0.4rem">'
+'THE VALIDATION TRIANGLE — FOUR ENTRY POINTS, ONE EXIT</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7;margin-bottom:0.6rem">'
+'No single source is enough. All sources cross-validate each other. '
+'Enter the triangle at any point — exit only when all sources confirm + 4 filters pass.'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.9">'
+'<strong style="color:#fff">Reddit</strong> — the raw emotion and plain-language question<br>'
+'<strong style="color:#fff">Competitor YouTube comments</strong> — the gaps a viral video left unfilled<br>'
+'<strong style="color:#fff">AnswerThePublic</strong> — the exact words Marisa types into Google<br>'
+'<strong style="color:#fff">Google Trends</strong> — whether the interest is structural or a spike'
+'</div>'
+'</div>', unsafe_allow_html=True,
+            )
+
+            # Source 1 — Reddit
+            st.markdown(
+'<div style="background:#1a2744;border-left:3px solid #4e8cff;border-radius:6px;'
+'padding:0.8rem 1rem;margin-bottom:0.8rem">'
+'<div style="font-size:0.7rem;color:#4e8cff;font-weight:700;letter-spacing:0.05em;margin-bottom:0.4rem">'
+'SOURCE 1 — REDDIT &nbsp;·&nbsp; Active now &nbsp;·&nbsp; Highest signal</div>'
+'<div style="font-size:0.82rem;color:#ccc;margin-bottom:0.6rem">'
+'Go where Marisa already lives — the communities she trusts — and read her unfiltered questions.'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7;margin-bottom:0.6rem">'
+'<strong style="color:#fff">Search method:</strong> Search "AI" across all Reddit. '
+'Sort: <strong style="color:#fff">Top</strong>. Filter: <strong style="color:#fff">Past Month</strong>. '
+'Skip developer subreddits (r/MachineLearning, r/artificial, r/OpenAI). '
+'Keep professional and general communities.'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7;margin-bottom:0.6rem">'
+'<strong style="color:#fff">Professional subreddits to watch:</strong> '
+'r/humanresources · r/marketing · r/lawyers · r/legaladvice · r/finance · r/accounting · '
+'r/projectmanagement · r/teachers · r/healthcare · r/business'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7;margin-bottom:0.6rem">'
+'<strong style="color:#fff">Reading the results:</strong><br>'
+'• Votes = agreement (how many people cared about the question)<br>'
+'• Comments = emotion (how much energy the topic generated)<br>'
+'• High votes + high comments → long-form candidate<br>'
+'• Low votes + high comments → emotionally charged → shorts candidate<br>'
+'• One filter: <em>"Would Marisa stop scrolling at this?"</em>'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7;margin-bottom:0.6rem">'
+'<strong style="color:#fff">The workflow:</strong><br>'
+'1. Broad search — AI, Top, Past Month<br>'
+'2. Spot posts with signal — high comments relative to votes<br>'
+'3. Open the post — switch comments to <strong style="color:#fff">Top</strong><br>'
+'4. Copy post title + top 5–10 comments → paste to Claude<br>'
+'5. Claude gives overarching sentiment in one paragraph<br>'
+'6. Decide — candidate or not, short or long, Marisa or Sevrien'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7">'
+'<strong style="color:#fff">Turning Reddit posts into titles:</strong><br>'
+'Reddit title = what Marisa is feeling. Your title = what Marisa needs to hear.<br>'
+'The gap between those two is where the video lives.'
+'</div>'
+'</div>', unsafe_allow_html=True,
+            )
+
+            # Source 2 — Competitor YouTube Comments
+            st.markdown(
+'<div style="background:#2a1f3d;border-left:3px solid #a855f7;border-radius:6px;'
+'padding:0.8rem 1rem;margin-bottom:0.8rem">'
+'<div style="font-size:0.7rem;color:#a855f7;font-weight:700;letter-spacing:0.05em;margin-bottom:0.4rem">'
+'SOURCE 2 — COMPETITOR YOUTUBE COMMENTS &nbsp;·&nbsp; Active now</div>'
+'<div style="font-size:0.82rem;color:#ccc;margin-bottom:0.6rem">'
+'Your target audience, already on YouTube, telling you what they wanted but did not get.'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7;margin-bottom:0.6rem">'
+'<strong style="color:#fff">Channels to watch:</strong> Nate B Jones · MIT Monk · Jeff Su · Cal Hyslop<br>'
+'<strong style="color:#fff">Find viral videos:</strong> views significantly higher than subscriber count = algorithm pushed it.<br>'
+'<strong style="color:#fff">Read comments:</strong> filter for "?" sentences, confusion, "I wish this covered...", disagreement.'
+'</div>'
+'<div style="font-size:0.82rem;color:#f39c12;line-height:1.7">'
+'<strong>Key rule:</strong> Do not copy the viral video. Fill the gaps it left. '
+'The comments show what the audience wanted but did not get — those are your videos.'
+'</div>'
+'</div>', unsafe_allow_html=True,
+            )
+
+            # Source 3 — AnswerThePublic
+            st.markdown(
+'<div style="background:#1a2a1e;border-left:3px solid #00b894;border-radius:6px;'
+'padding:0.8rem 1rem;margin-bottom:0.8rem">'
+'<div style="font-size:0.7rem;color:#00b894;font-weight:700;letter-spacing:0.05em;margin-bottom:0.4rem">'
+'SOURCE 3 — ANSWERTHEPUBLIC &nbsp;·&nbsp; Active now &nbsp;·&nbsp; Free plan sufficient</div>'
+'<div style="font-size:0.82rem;color:#ccc;margin-bottom:0.6rem">'
+'The exact words Marisa types into Google — not topics, but specific questions in plain language.'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7;margin-bottom:0.6rem">'
+'<strong style="color:#fff">How to use:</strong> answerthepublic.com → search "AI for professionals" → '
+'Location: United States → check tabs in order: '
+'<strong style="color:#fff">Questions → Prepositions → Alphabeticals → Numbers</strong><br>'
+'Within each tab, start with <strong style="color:#fff">Search Engines</strong> (highest value).'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7;margin-bottom:0.6rem">'
+'<strong style="color:#fff">Key insight:</strong> Marisa does not search "what is AI" — she searches '
+'"which AI is best for MY profession." She is in evaluation mode, not awareness mode. '
+'Every result is profession-specific: medical, legal, finance, HR, healthcare — all non-technical, all Marisa.'
+'</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.7">'
+'<strong style="color:#fff">Free plan:</strong> 3 searches/day (~90/month). CPC and search volume data '
+'(behind paywall) is not needed — Google Trends handles demand validation for free. Do not upgrade.'
+'</div>'
+'</div>', unsafe_allow_html=True,
+            )
+
+            # Demand Scenario Map
+            st.markdown("**Demand Validation — What to Do in Each Scenario**")
+            st.markdown(
+"""| Scenario | Action |
+|---|---|
+| Low web + low YouTube | Opportunity — own the space early. Rely on recommendation engine. Packaging must be exceptional. |
+| High web + low YouTube | Go — proven demand, no YouTube competition. Google may surface your video too. |
+| Low web + high YouTube | Strong signal — algorithm already pushing this. Follow it fast. |
+| High web + high YouTube | Go fast, own a specific angle. Check for gap in existing coverage first. |
+
+**In all scenarios — go.** The angle and packaging strategy differs, not the decision. The 4 filters are the real gatekeepers.
+"""
+            )
+
+            # 4 Filter Decision Tree
+            st.markdown(
+'<div style="margin-top:0.8rem;padding:0.8rem 1rem;background:#162030;border:1px solid #2a4a6a;border-radius:6px">'
+'<div style="font-size:0.7rem;color:#4e8cff;font-weight:700;letter-spacing:0.05em;margin-bottom:0.5rem">'
+'✅ THE 4-FILTER DECISION TREE — all four must be YES to proceed</div>'
+'<div style="font-size:0.82rem;color:#ccc;line-height:1.9">'
+'<strong style="color:#fff">1. Demand confirmed?</strong> — high comments on Reddit, views on YouTube, or search volume on Trends<br>'
+'<strong style="color:#fff">2. Questions not just venting?</strong> — curiosity underneath, not pure frustration<br>'
+'<strong style="color:#fff">3. Hits 2+ psychological drivers?</strong> — Career Advancement, AI Literacy, Governance & Operational Security<br>'
+'<strong style="color:#fff">4. Can FunzAI deliver it credibly?</strong> — within expertise and tone'
+'</div>'
+'<div style="margin-top:0.6rem;font-size:0.78rem;color:#ff6b6b;font-weight:600">'
+'Any one NO = skip or find a different angle on the same topic. Demand is the easiest hurdle. The four filters are the real gatekeepers.'
+'</div>'
+'</div>', unsafe_allow_html=True,
+            )
+
         with st.expander("✅  Production Checklist — Shorts & Long-Form"):
             st.markdown("""
 **Run this checklist before every upload — shorts and long-form.**
